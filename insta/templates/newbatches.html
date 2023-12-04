@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dextris</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="/"><img src="https://dextris.in/assets/images/logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="/">HOME</a></li>
+                    <li><a href="/about">About US</a></li>
+                    <li><a href="/courses">Courses</a></li>
+                    <li><a href="/newbatches">New Batches</a></li>
+                    <li><a href="/placements">Placements</a></li>
+                    <li><a href="/contact">Contact US</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+        <h1>Our New Batches For 2023</h1>
+
+    </section>
+    
+
+    <section class="blog-content">
+        <div class="row">
+            <div class="blog-left">
+                <img src="{{ url_for('static', filename='images/certificate.jpg') }}" alt="Example Image">
+                <h2>Our New Batches For 2023</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi quae nihil natus aut molestiae tenetur voluptates molestias maiores provident earum, consequatur eligendi recusandae aspernatur alias expedita itaque. Repellendus, minus laboriosam.</p>
+                <br>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam deserunt rerum, eius laborum voluptates dignissimos ipsa natus perferendis quasi similique eaque fugit atque nesciunt voluptas adipisci architecto optio at ratione velit provident distinctio quis fugiat iusto quia. Et voluptate possimus accusantium. Facere animi eius incidunt.</p>
+                <br>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut eos odio unde omnis ea, reprehenderit fuga provident dicta iure aliquid!</p>
+
+                <!-- <div class="comment-box">
+                    <h3>Post your Message</h3>
+                    <form class="comment-form">
+                        <input type="text" placeholder="Enter Name">
+                        <input type="email" placeholder="Enter Email">
+                        <textarea rows="5" placeholder="Message">                                                    
+                        </textarea>
+                        <button type="submit" class="hero-btn red-btn">POST MESSAGE</button>
+                    </form>
+                </div> -->
+                                                                                                                                                                                                                                    
+            </div>
+            <div class="blog-right">
+                <h3>&nbsp;&nbsp;New Categeories &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Batches</h3>
+                <div>
+                    <span>Machine Learning</span>
+                    <span>23</span>
+                </div>
+                <div>
+                    <span>Microsoft Azure</span>
+                    <span>9</span>
+                </div>
+                <div>
+                    <span>AWS with ML</span>
+                    <span>11</span>
+                </div>
+                <div>
+                    <span>Ethical Hacker</span>
+                    <span>29</span>
+                </div>
+                <div>
+                    <span>Meta Science</span>
+                    <span>33</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    
+
+
+    <section>
+        <div class="content-section bg-light">
+            <p>Please follow STEPS for registration to Online Classes <br></p> <br>
+            <ul>
+                <li><p>Select the course you wish to attend from the below table</p></li> <br>
+                <li><p>Fill Online Registration Form - Click Here</p></li> <br>
+                <li><p>You would get the Syllabus and on-line login details to attend first session</p></li> <br>
+                <li><p>For any other query / Information call +91- 9346784185</p></li> <br>
+            </ul>
+            <div class="newone">
+                Online Courses
+            </div>
+            <section id="course-section-1">
+                <div class="container">
+                    <table class="course-table" width="100%" border="0" cellpadding="0" cellspacing="0">
+                        <thead>
+                            <tr>
+                                <th scope="col" width="18%" bgcolor="#0f75bc" class="course-heading">Course</th>
+                                <th scope="col" width="12%" bgcolor="#0f75bc" class="course-heading">Date</th>
+                                <th scope="col" width="16%" bgcolor="#0f75bc" class="course-heading">Timing</th>
+                                <th scope="col" width="11%" bgcolor="#0f75bc" class="course-heading">Duration</th>
+                                <th scope="col" width="17%" bgcolor="#0f75bc" class="course-heading">Faculty</th>
+                                <th scope="col" width="16%" bgcolor="#0f75bc" class="course-heading">Designation</th>
+                                <th scope="col" width="12%" bgcolor="#0f75bc" class="course-heading">Register</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="course-name">
+                                    <span>Machine Learning</span>
+                                    <br>
+                                    <!-- (Manual + Selenium + Project + Placements) -->
+                                </td>
+                                <td class="course-info">11th Sep 2023</td>
+                                <td class="course-info">07:30 AM to 09:00 AM</td>
+                                <td class="course-info">70 Days</td>
+                                <td class="course-info"><span>Mrs. Dakota Johnson</span></td>
+                                <td class="course-name">
+                                    <span>Test Director</span>
+                                    <br>
+                                    (21+Yrs I.T. Exp.) (Trained 85,000+ Prof.)
+                                </td>
+                                <td class="course-info">
+                                    <a href="/machine" class="register-btn">Register</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="course-name">
+                                    <span>Web Development</span>
+                                    <br>
+                                    <!-- with JAVA -->
+                                </td>
+                                <td class="course-info">01st Sep 2023</td>
+                                <td class="course-info">07:30 AM to 09:00 AM</td>
+                                <td class="course-info">40 Days</td>
+                                <td class="course-info"><span>Mrs. Ariana</span></td>
+                                <td class="course-name">
+                                    <span>Sr. Test Lead</span>
+                                    <br>
+                                    (15+Yrs I.T. Exp.)
+                                </td>
+                                <td class="course-info">
+                                    <a href="#0" class="register-btn">Register</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="course-name">
+                                    <span>Microsoft Azure</span>
+                                    <br>
+                                    <!-- with JAVA -->
+                                </td>
+                                <td class="course-info">01st Sep 2023</td>
+                                <td class="course-info">07:30 AM to 09:00 AM</td>
+                                <td class="course-info">40 Days</td>
+                                <td class="course-info"><span>Mrs. Anna Hathway</span></td>
+                                <td class="course-name">
+                                    <span>Sr. Test Lead</span>
+                                    <br>
+                                    (15+Yrs I.T. Exp.)
+                                </td>
+                                <td class="course-info">
+                                    <a href="#0" class="register-btn">Register</a>
+                                </td>
+                            </tr>
+                            <!-- Other rows go here -->
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+            <div class="download-box">
+                <a href="{{ url_for('static', filename='pdfs/your-brochure.pdf') }}" download>Download Brochure</a>
+            
+                </a>
+            </div>
+        </div>
+    </section>                                                                                                                                                                                                                                                                                                                                                                    
+
+    
+
+
+    <section class="footer">
+        <h4>About US</h4>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error, dignissimos quibusdam rerum tempore eius <br>suscipit, dolorum sequi voluptatem minima ratione ex amet voluptas magnam eaque in doloremque quisquam exercitationem similique!</p>
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+            <a href="https://www.linkedin.com/company/dextris-info-services-pvt-ltd/mycompany/" target="_blank"><i class="fa fa-linkedin"></i></a>
+
+        </div>
+        <div>
+            <p>&copy; 2023 Dextris. All rights reserved.</p>
+        </div>
+    </section>
+
+
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+
+
+</body>
+
+</html>

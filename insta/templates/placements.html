@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dextris</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        /* Reset some default styles for padding and margin */
+/* Reset some default styles for padding and margin */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Style for the custom content section */
+.custom-content-section {
+    padding-bottom: 0;
+}
+
+/* Style for the custom container */
+.custom-container {
+    display: flex;
+    justify-content: center;
+}
+
+/* Style for the custom row */
+.custom-row {
+    display: inline-flex; /* Display items inline horizontally */
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+}
+
+.custom-row a{
+    color: black;
+    text-decoration: none;
+}
+
+
+/* Style for the custom interview quotes (boxes) */
+.custom-interview-quote {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #fff; /* White border */
+    background-color: #f7f7f7;
+    border-radius: 5px;
+    flex: 1; /* Equal width for all items */
+    margin: 10px;
+    box-sizing: border-box; /* Include padding and border in the width calculation */
+    min-width: 0; /* Ensure that flex items can shrink if necessary */
+    min-height: 0; /* Ensure that flex items can shrink if necessary */
+}
+
+/* Style for the anchor tags within the boxes */
+.custom-interview-quote a {
+    text-decoration: none;
+    color: inherit; /* Inherit the text color from the parent */
+}
+
+/* Style for the custom interview quote images */
+.custom-interview-quote img {
+    max-width: 100px; /* Adjust the image size as needed */
+    height: auto;
+}
+
+/* Style for the custom interview quote headings */
+.custom-interview-quote h4 {
+    margin-top: 10px;
+    font-size: 18px; /* Adjust the font size as needed */
+}
+
+
+
+
+    </style>
+</head>
+
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="/"><img src="https://dextris.in/assets/images/logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="/">HOME</a></li>
+                    <li><a href="/about">About US</a></li>
+                    <li><a href="/courses">Courses</a></li>
+                    <li><a href="/newbatches">New Batches</a></li>
+                    <li><a href="/placements">Placements</a></li>
+                    <li><a href="/contact">Contact US</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+        <h1>Placements</h1>
+
+    </section>
+    <br><br><br><br>
+    <section>
+        <div class="custom-content-section" style="padding-bottom: 0px">
+            <div class="custom-container">
+                <div class="custom-row">
+                    <a href="pdfs/manual-interview-questions-new.pdf" target="_blank">
+                        <div class="custom-interview-quote custom-interview-quote-manual" align="center">
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKcAAACmCAMAAACIlG97AAAA0lBMVEX////WAAAAAAD+/v79/f0oLzn6+vrTAAAmLTjS09T09PQtLS3o6Ojvt7cQEBBpaWnqo6InJyfHx8dXV1fb29vjeXjpnp7439+cnJxeXl7cRkb66eni4uJxcXG3t7fYIiPyxMTcPj7YGBkcHBzcXFvVJyeOjo56enpNTU05OTm/AADtrauqqqpCQkLbUlH0z8/gZ2flhITYMTEYIi5SWF/Li4vdr7DOlpbalpbALzC8ICHObG68NTbnk5PhcG/VaWzj0dLDSkzWwMANGSgAABBDSVFnJfM4AAARi0lEQVR4nNWdCXfiOBKATayWOw4hJEAIR0IA5yZA6MzMzswms7u9/f//0uo+Swf0231vq99LB1vIn8tSqVQqK0UBS4lK/WugSGme0uWNEgXCCBPR3wgKAn5LS2leFgItyxJj67oAKGMkqHC1AUz4lmF6hwwApdd31ONXz5WJ4oUACvDZQMpyj4Gg2K3O/UyLIIzihdgxt3pIeQCUX8wtVDIE7JSyGUrsaRMGBa7nqQBgyGgJpHGWvj7d6hGECTCAzdFpUz5DqHer45j3YkALdvW0p4FVOXcDX08dJtchl3MYgkZInyl5s8OBDpE0ZzZoxAKIE9xmOHWCSrIuXLq2xq0epWtSJ8OUChRxtVgMCRPLCjFTE1CmUVUMQBWKYnIazDujLtee9vvtaN1sPME40DvM+lFUmVzI5Y6niTJI9ARDLWV7Ok1yFuxLCUoidbpI0c+4Xol860f0OU3dH+tCsWcuBAc6uin9fn+a4uRNzL5eu5/i5E0lTcDuJ1mGqCWuzxK+Xt0mEuvtotfheg+JYNDL1bHejkUbszsbYp8ijhfTUXv1cH22h9yHMXilERuLkTB/FqgyaMHvIXTxeHK0p4RAlUKC1zN7rCiNDKMMmjTSljG6GD2N9sUMgRrPDXTXREdHRnnqUKS8VPqN1dNouT8mCJpywkvhtxpnqOHGTlHPSNO7ux/1ep1DOI9WUcwC0GiJrdmK1JXvn7mOHsZXy8eDtEnlysV0uQD/2jfToE10FFzc9J4OpXRAISfcRceg7kCnwvwiaRujc3nN+5vjtDw6oPrRBwZ+xwOGhubAUGx5pA+KMmc0KkphF5YdFzTp3PJC4Bwq8E15nNQwlWbzJu/LWHBeX0nOzsqFCYPuM33X5en3rxyt+IXsAVJx1gp0eZPwnBXovph6jofEY++BEyLKVduOgeYs75VGvWfhg4LT0xxQ7u+2e/xSF6FidW1bDM1ZIKHRznKZBK2Jq3ec1QE8AHZ7fW6TTvpBTMfvMTgLzDV6cnJ0ErpPzUl8y0M4S25Zj3k3eoS9ReLnuXWbnAW+Zvo8Ou8sj+OXw9QljbmC4W8y23rMjWcP4ixrhhnWJ/nEmneH3Ox5XKOHcvLpJYpyFlybtt9qcxa1Mr9PUY3SBlRnzGrcr/GLl3FOGakwq3c4C9yToCeRmY3ta2aLLh/lVMWNMcTlFG2UynmgMxp2MzYaAJT6slmcJqjNSa9bK9BXENQOViViFPBFczmN6i1OTlCrR//qVYM8vyN3fLdVn8upI1cGpzxWKx/qxK0n6VeGjjktJJtTQpnjkdJMW02uXu3OxL33dEzUa7euv5DPKZqLMb4bl2srjVojBoIDVulH77k1+ZwC1OvvXGrljj6ZlAgO/6WiwP7546fl+fn5cpTByasKcBb1q9IoPyNCHrBtt6DcoCpkvOoLJsduRCoIGuIspgp0xEyBWBAJVGtAuUHqRNwyywQTZzDEWbQl51FPRf8idSIR8rUGOxqYSkLQKGnSVWj3lgHOoq0mhD0RTIhHlBFyZ/tt4qz09aH6tAvJL7/+9svfwDNMXja0hunDY4hTOrPcGkTj50yAuKLFibetCpLn3//4/Rk+xWTWpbd81mHDzxmk+b6w9qPH+1QzK6ApcpsGohXnoGqB8vzHn39/hk9xqSZEn6Me6zCPoHdEQU+Ozl57wWCeKR5nPTU4J+sAxjORwC0IeSNVydkb7BcfPx1dnz1dk3t5SDV12jaBYAmWjvlwHNCW8TMgA2KBLwTnFXBpCjp6HL0+0ob6kFg44R6wGYOwvdQAZ+X8D3OSRysDE6C+StR/Perxjv+QxrRiEMg+xzkXun9wPPl7pUHtbkQ+U04sZxrXHmPJfM3+mYz+RSJBpWvd7dVT+oFxLm5Pubx0B3cUafaiPwvS6tSURnAWK2l83BCKWMEtb1SU8ioE6gVzHetAjzHOmT6GJ1sCdjfRn1+Eiq2rvBGNMk4sraQbBsFydfRGcnbgRuyY9xJct/c4iTQmJ5HJjHFaLZBaM8apMew+zdatuOnWJSDQdDCXieash5shW2eYLDgnmogLb+4kJ5pwwYOW5CzUPOPo8cY0o3ridaOG0JX76EsoaA9gGpy34/m4y4JdbxXjnAyaz1tW6KMSnJPPhsl2pzn7xhLO68PqQoZwpzqaq6b1pHE4EfvcKedwXEnOBenSQ/rbqeAkp6oNKzQnPZxx7iptqwZSXVY8vyNk+bTsKDGevJ1hlEnJ9FkZnF2Lk8DcsVJbqc+5YVIlp9EAk3Jl9pt95u/0uVeSs1Vdst8MzgVT6IfiNAyq4nQ0muDUHWWfMIPRPinnKdNnS3O2LvkRxdkCOIvj1zSi5pR5FntgSk7Snm/JY1+zHv5i6JN6G6THV5STmILtmsrO5SyKe+VtdmKLZMIyEceyH4zrxDhxXQ5fXl6Y2ay3HueQceIac7N0WXmcRf9K6PQp1ggkZ05KBchpeNNEeTCncmW7ACfxay8ekuuNWp/JFAeQ0/BSJ3Lc9J57IW8G5qRS9y9uLm4AubbaJ9HmYfqU696TTZeOkgbnBz1+yzkLfMvkLcgZlCuLk6ZU7BdP1nZpMxgMPpsdQzA4X+i5bqXsJ3EBF5Xfj4RIf9cb+0xOwHfbg/PWcDYN+8lGqM+ondeU5nJ/kNPxgDMEFaU1bioGxVk19BSdRClOyH4KOHPa4DAozlihECbxY207L0klZzXjA/4ih9PxI20GyZlKzKVrswBo4XKa+vxsLrlB/awyON1r2qBWP4qC+gMVNZqTbZBTCTNDKU7/ipabEeAEE4GdTFk6z8IRfUq5ZYcSnHBCtD4Y4nRtgwiIaeqSz7OSnPUHP14hm7OqDM5Q2qRWTJDThNL5tMql4tMX2T5Pydj+ZkyBF5cvVLqXg50yVl1y4PJO34vBmU6VjXFaUFjm/ZbqEIvu8vm7nrlLZVnT+RZURj/3dGAzzikLmXm/OlWWB6GjcZvmzwY+KzhFjkPcCnKIKCfvPTzjysoM07liEc5q8TF4W8CnhT7pgv80tZCOSaH2fZyz8BLY5DKOOBCM17UW48vBehcOMFUfNETZ7k9TfjnuT/vTJCfPDNOQMo1RPqyPAMliu/3chZXJ458s5TU1+NXU2UxwijQ7HWcSqauGDsBA7WLdbMexYF21uC14yDeVQszi7IoTvCnsKFMuNmFrtj88BWQz3ECHldyyWtvTjCUJGhdu0x9EIKcTye5ivAghVx6SU+es5GSxxJMqlroUkq8TqNisfuYp0JwpNioyCiWFd2vxOyoUpQrd+vcp1uMuzJaSxvQLTU7fBrC8vVgejnqdQB1AorVGvdRj3tjtVd7AY7MeiA062UILOWKQGw+NkiJIauilRIW3Xus9e3C9GA6pOUetj92AoWDDLg9haU4PqjBeRlHVZ3CCzx7wufWvl2FrJkNYAtPwPEx4wMu3DoXW310q+E07VVWYk4CanCWYDwguMVqXDHE6KbxwS9Ch4QinrU9mOv15AFS7paxwPkPWLFEWyuZEoRzfBGgk78JYgYq8ccFdvMtWxMsyOPe1u+o5RvMAc6IYvJF250EnjHHKINH+CXb0EjiRx1LaM6wAKP2xaT7i+mSEh4xibfpqGE7k21BPNiNxpMTdv2YRt5U+95xXxUBOGjdN5CvSRNWM2jGuu+l+lFMTxEld2SQn8m0yQFmXGf09720xgDNHn37KgSc1VVQGZ/Dt1aiUNX81LM7JUw7i1WOadHsZnQhc8i6ZqgnC5N9I5dOWZuFgXQW1nxFQwokOs0t5+bThEKwn9LmHSCvTzu/Tl0z9g5yEq8ZmqWT1jBMGre6scRN2FGBM4wPI6edypZoW70cA6Lg1tzhhYw89MPuOYD/ZfwE+oVHR333Q+Xq9sDkzQZ0LQpwI2vcgPguUdskF3a3Xg+3c5swCTc87xL4gXmXRRw9zVovtbtG4+gyAomgJlxMZgb1oTTCnCVotmqrZjceVx5nUqH/e4cQymAtJBFSPR6rXj5v1+m79ObbnHQCITgMr7QNhzlK/+AtK8NEb46YAnY0/Z/NZw+abPmcgn7YMXkRz0tCOiJuGG2Ko21vjO2Pb3u2a+YLnFwGc8uGUdvJIGXJSNacIVCRe1Q+A2n5IRczR57aZz8VHiBOO+GLvfSePkz/0A/c9cPwlYo6qXSOnTEHOts8ZAjD06W4+ERCwl9mc86ZpxrtZK8XZn3oRdFwnOL1gbkgQBiKaJue8Ij19NzeaQZjTydumrQrWlOActYush87bv19Mcy5mzWBB2mYryYlpxNfSp1iZg0gF53UtX8RIzS6RrhDm3DbrZnxnWlKYswzm00IMnLPz0FZ55FFQNaV3SmnO+fhzMd9pAxW0S2Y+LTWJZp3QeLTsdF7Pz2oUuxsXk5VCw4kSNnuvFq3FfLbd6UUTkUf6oQsOZRjZyqclY2DtGVKH82nU641GeXFac0mqxEZslj/y9XhNjObWHOPFf0rW/quBBNRd5/DH6OOTxx7595ARp3UUTXx+Z4lxtt7Ot01jLUE5DlQz4RBOPi2whZdzteOzk5PespcTp/WP1VZQabadNbP52AmIWaDrIcf06gbfprI4e6Oz0fmBcVo7SfCuIXbT9+iNtfP5MHDD/m5k7iWPl6/0BRjv/WJ3mwx4plUM5y0T1FWmDTrbwJQZ+x4U/Se2gQHwvrbZZ8Kj6cZojYvIEi7lvS2S5jnIEHn/XSfBxsb8TSRA+7OYqjzS+wn4ZaQZSkQZTrMgW9VLEbZ4UVBuCiL7MzDC9KDfrVzzA4F+FIfFaWl6K+087eB+FwULPqaTAorLQCTEwgy/0pfglFub6f1D/L5UT4krm67+IwVavWF0YJxW5bfq1wRf71cXjqxWFzfuMUeI5atDb4hJzC0ugrPYhIg4bWHnwnc86QHHTDl6xDQvLxr/ZKNlzr5ivtA4bc1fLkVXRz8l9I2+yTYMWq0nwrwfHqdl/6tX3g4U+t6WNYLaQhM1ZcR3zyZqeH9Moz8JSt8tHIYGI/oCScwDjog5xvI7vbB3B+scLc8DTKDQnJoNDErfwrCiNKDewIOOH8kK1asz47q9zn5bR3VWFBSyTtWpl0YJKS6hTAOU2Mqbh94Jk/PR9ehkHzk/p5uHnPqgFNNVVh4o5AEfNFAAcuqOn1UX8g7AlIN0GS/pFgF7KvhVAc4e6toaJaMl2PSSoMkdvJCM0yYnHqCJQW9W+uigDmQqgN/NWF4xtoaNxGnN6kNTvYEGrdaBqzmg0n1UoLG0BPn2Q2acNlii/lSgTWycjO17EE1LoO1dbKMbcYxZoArKy1cyIVM5RjqehAsV0gsv7eV9lj+Y6NUsTovhfTQMmfYTW93iFn9D/R/xy7GH596ws+9BCBSa7nucyfeyJrvW8z//+lf6ZSN/qkD98jhnKSb7SVs6TW4hW2zunv/+azvtX/uJYbW17wEkKHeD2px82s3zb+1per6S2Pcg8A0eO0kqISufdkowY/vhMuGpA+YR/jRjZknua5u5GUoqmGuWjVcFZZ2FGYy89XjtGTFSXUW0KitO69QJ79Yut7VN2vAcf9f6+w8RUG/fA2eHYv8bftp6eDiK10TbV23taRP8axbevgfJ/WIRsF9sXj4tUAK7O2HDoP6+B8k8AcRXiFG0EHzMd7iB0QwM9fnKSnp/JQJTvnL+KIV3TNq2BGhuzo1VfRkIdHnvhiUzc1FoX/iM+VFArD4T8o6srbGCKyCygMgvAJ0YlOp/QQFsFgChrhkeIeyXxYJP1Jwv7COq+ngpOa5EBlN+kv1lEq83GnJg3prI1E59raTvKAYWmnVNZc5fLEiN3BEGz0v1haYcZOzWGv1bGkIOzafNaip4muWfZUlsnpCxDXZU2D4BP1tJWoov/x9SfHXli/XbF++8W5xJokyqEvOCskLxQ5xy9fnt63dZ9Mt38ZX/urJM+fqNyNdv+t74YcH59fvZ6t/k4PfV69UPUo6VXpGfX76RM4T+f8b5fn39Pnq//vHjnfz78f7+gx/+D8FkQkSUVOI/AAAAAElFTkSuQmCC">
+                            <h4> &nbsp; Interview Questions &nbsp;</h4>
+                        </div>
+                    </a>
+                    <a href="pdfs/automation-questions-new.pdf" target="_blank">
+                        <div class="custom-interview-quote custom-interview-quote-auto" align="center">
+                            <img src="data:image/png;base64,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">
+                            <h4>Automation Questions</h4>
+                        </div>
+                    </a>
+                    <a href="pdfs/hr-interview-questions-new.pdf" target="_blank">
+                        <div class="custom-interview-quote custom-interview-quote-hr" align="center">
+                            <img src="data:image/png;base64,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">
+                            <h4>HR Interview Questions</h4>
+                        </div>
+                    </a>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>

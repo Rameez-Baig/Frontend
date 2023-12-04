@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dextris</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+    <section class="header">
+        <nav>
+            <a href="/"><img src="https://dextris.in/assets/images/logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="/">HOME</a></li>
+                    <li><a href="/about">About US</a></li>
+                    <li><a href="/courses">Courses</a></li>
+                    <li><a href="/newbatches">New Batches</a></li>
+                    <li><a href="/placements">Placements</a></li>
+                    <li><a href="/contact">Contact US</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+        <div class="text-box">
+            <h1>Number one Online Institute</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem atque repellendus deleniti accusamus iure sapiente labore ad officiis autem voluptatibus!</p>
+            <a href="" class="hero-btn">Visit Us to know More</a>
+        </div>
+
+
+    </section>
+
+    
+
+    <section class="testimonials">
+        <h1>What Our Students Says</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam, est.</p>
+        <div class="row">
+            <div class="testimonials-col">
+                <img src="{{ url_for('static', filename='images/user1.jpg') }}" alt="Example Image">
+                <div>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat voluptatum magnam sapiente voluptatem, ab labore laboriosam impedit temporibus natus cupiditate!</p>
+                    <h3>Christine Taylor</h3>
+                </div>
+            </div>
+            <div class="testimonials-col">
+                <img src="{{ url_for('static', filename='images/user2.jpg') }}" alt="Example Image">
+                <div>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat voluptatum magnam 
+                        sapiente voluptatem, ab labore laboriosam impedit temporibus natus cupiditate!</p>
+                    <h3>David Becham</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="cta">
+        <h1>Enroll for our Online Courses <br>Anywhere From The World</h1>
+        <a href="/contact" class="hero-btn">CONTACT US</a>
+    </section>
+
+
+    
+
+
+
+    <section class="footer">
+        <h4>About US</h4>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error, dignissimos quibusdam rerum tempore eius <br>suscipit, dolorum sequi voluptatem minima ratione ex amet voluptas magnam eaque in doloremque quisquam exercitationem similique!</p>
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+            <a href="https://www.linkedin.com/company/dextris-info-services-pvt-ltd/mycompany/" target="_blank"><i class="fa fa-linkedin"></i></a>
+        </div>
+        <div>
+            <p>&copy; 2023 Dextris. All rights reserved.</p>
+        </div>
+    </section>
+
+
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+
+
+</body>
+
+</html>

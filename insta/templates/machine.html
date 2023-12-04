@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dextris</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        /* Reset default margin and padding */
+body, h1, h2, h3, h4, h5, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Apply general styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.course-header {
+    background-color: #0f75bc;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+}
+
+.course-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.course-details img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.course-details p {
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.register-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #0f75bc;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* Responsive design for smaller screens */
+@media screen and (max-width: 600px) {
+    .course-details {
+        padding: 10px;
+    }
+}
+
+    </style>
+</head>
+
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="/"><img src="https://dextris.in/assets/images/logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="/">HOME</a></li>
+                    <li><a href="/about">About US</a></li>
+                    <li><a href="/courses">Courses</a></li>
+                    <li><a href="/newbatches">New Batches</a></li>
+                    <li><a href="/placements">Placements</a></li>
+                    <li><a href="/contact">Contact US</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+        <h1>Machine Learning</h1>
+
+    </section>
+    <div class="course-header">
+        <h1>Tutor Details</h1>
+    </div>
+    <div class="course-details">
+        <img src="https://images.pexels.com/photos/3771074/pexels-photo-3771074.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Tutor Image">
+        <p><strong>Duration:</strong> 70 Days</p>
+        <a href="" class="register-btn">Register</a>
+    </div>
+</body>
+
+</html>
