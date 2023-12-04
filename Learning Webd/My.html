@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dextris INF</title>
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="sty.css">
+    <style>
+        body{
+            font-family: 'Baloo Bhai', cursive;
+            margin: 0px;
+            padding: 0px;
+            background-color: white;
+            color: white;
+        }
+        .left{
+            position: absolute;
+            left: 34px;
+            top: 35px;
+            /* border: 2px solid rgb(145, 118, 118); */
+            display: inline-block;
+           
+        }
+        .mid{
+            display: block;
+            width:55%;
+            margin: 20px auto;
+            border: 2px solid black;
+        }
+        .right{
+            position: absolute;
+            right: 34px;
+            top: 20px;
+            display: inline-block;
+            border: 2px solid black;
+            
+        }
+        .navbar{
+            display: inline-block;
+        }
+        .navbar li{
+            font-size: 18px;
+            display: inline-block;
+        }
+        .navbar li a{
+            color: black;
+            text-decoration: none;
+            padding: 20px;
+        }
+
+        .navbar li a:hover, .navbar li a.active{
+            text-decoration: none;
+            color: gray;
+        }
+        .left img{
+            width: 150px;
+            border-radius: 4px;
+        }
+        .nav li{
+            font-size: 18px;
+            display: inline-block;
+        }
+        .nav li a{
+            color: black;
+            text-decoration: none;
+            padding: 30px;
+        }
+        .nav li a:hover, .nav li a.active{
+            text-decoration: underline;
+            color: gray;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="left">
+            <a href="https://www.google.com"><img src="logo.png" alt=""></a>
+            <!-- <a href="https://www.google.com">DEXTRIS</a> -->
+        </div>
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Leadership Team</a></li>
+                <li><a href="#">Industries</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="/j">Join Us</a></li>
+            </ul>
+        </div>
+        <div class="right">
+            <ul class="nav">
+                <li><a href="#">Contact Us </a></li>
+            </ul>
+        </div>
+    </header>
+</body>
+</html>

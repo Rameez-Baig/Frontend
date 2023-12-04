@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+
+<body>
+    <h2>This is HTML forms tutorial</h2>
+    <form action="backend.php">
+
+        <div>
+            <label for="name">Name: </label>
+            <input type="text" name="myName" id="name">
+        </div>
+
+        <div>
+            Role: <input type="text" name="myRole">
+        </div>
+
+        <div>
+            Role: <input type="email" name="myEmail">
+        </div>
+
+        <div>
+            Date: <input type="date" name="myDate">
+        </div>
+
+        <div>
+            Bonus: <input type="number" name="myBonus">
+        </div>
+
+
+        <div>
+            <label for="ele">Are u eligible?: </label>
+            <input type="checkbox" name="myEligibility" id="ele" checked>
+        </div>
+
+        <!-- If name is given same in this case myGender then we can select only one checkbox -->
+        <div>
+            Gender: Male <input type="radio" name="myGender"> Female <input type="radio" name="myGender">
+        </div>
+
+        <div>
+            Write about your self: <textarea name="nyText" cols="30" rows="10"></textarea>
+        </div>
+
+        <br>
+        <div>
+            <label for="car">Car </label>
+            <select name="myCar" id="car">
+                <option value="Ind">Indica</option>
+                <option value="Swf">Swift</option>
+            </select>
+        </div>
+
+        <div>
+            <input type="submit" value="Submit Now">
+            <input type="reset" value="Reset Now">
+        </div>
+
+    </form>
+</body>
+
+</html>
