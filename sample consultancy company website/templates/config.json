@@ -1,0 +1,10 @@
+{
+    "params":
+    {
+        "local_server":"True",
+        "local_uri": "mysql://root:@localhost/contacts",
+        "prod_uri": "mysql://root:@localhost/contacts",
+        "fb_url" : "facebook.com/contacts"
+    }
+
+}

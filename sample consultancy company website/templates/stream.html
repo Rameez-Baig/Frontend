@@ -1,0 +1,200 @@
+{% extends "layout.html" %}
+{% block body %}
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: white;
+            color: black;
+            /* Change text color to black */
+        }
+
+        .title {
+            top: 20px;
+        }
+
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        .section {
+            width: 100%;
+            min-height: 290vh;
+            background-color: #ddd;
+        }
+
+        .container {
+            width: 80%;
+            display: block;
+            margin: auto;
+            padding-top: 100px;
+        }
+
+        .content-section {
+            float: left;
+            width: 100%;
+            clear: both;
+            
+        }
+
+        .image-section {
+            float: none; /* Remove float */
+            width: 100%; /* Take up full width */
+        }
+
+        .image-section img {
+            width: 100%;
+            height: auto;
+        }
+
+        .content-section .title {
+            /* text-transform: uppercase; */
+            font-size: 20px;
+            text-align: center;
+            font-family: sans-serif;
+        }
+
+        .content-section .content h3 {
+            margin-top: 20px;
+
+        }
+
+        .content-section .content p {
+            margin-top: 10px;
+            font-size: 18px;
+            line-height: 1.5;
+        }
+
+        @media screen and (max-width: 768px) {
+            .container {
+                width: 80%;
+                display: block;
+                margin: auto;
+                padding-top: 50px;
+            }
+
+            .content-section {
+                float: none;
+                width: 100%;
+                display: block;
+                margin: auto;
+            }
+
+            .image-section {
+                float: none;
+                width: 100%;
+                display: block;
+                margin: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <br><br><br><br><br> -->
+    <div>
+        <div class="section">
+            <div class="container">
+                <div class="image-section">
+                    <img src="https://www.dextris.in/assets/images/stream-cast-banner.jpg" alt="">
+                </div>
+                <div class="content-section">
+                    <div class="title">
+                        <h1>Stream Cast</h1>
+                    </div>
+                    <div class="content">
+                        <!-- <h3>Lorem ipsum dolor sit amet consectetur adipisicing.</h3> -->
+                        <p>StreamCast from DEXTRIS is a cutting-edge white-labeled OTT product designed for service providers seeking to launch a comprehensive multi-device video streaming solution. By leveraging YouCast, service providers can deliver an immersive and secure streaming experience while effectively monetizing their content offerings.
+<br><br>
+                            StreamCast is a feature-rich OTT platform for offering audio and video content like Podcasts, Musings, Movies, TV shows, Sports, Education, Travel, cooking and more.
+<br><br>                            
+                            Users can register securely, access a content management system, and enjoy high-quality video playback on various devices. Personalized content recommendations, robust search and filtering, and multi-language support enhance the user experience. With multiple device compatibility, subtitles, and multi-user accounts, it provides convenience and flexibility. The platform integrates payment gateways, social sharing, and analytics for informed decision-making. Push notifications and user feedback contribute to community engagement. This OTT product aims to provide a seamless, personalized, and immersive viewing experience for a diverse user base.
+<br><br>                            
+                            We Support the mandatory features that are essential for a successful and competitive offering.
+                            Business Module
+<br><br>                            
+                            Payment Integration
+                            Integrated secure payment gateways to facilitate subscription management, payment processing, and seamless renewal or cancellation of subscriptions
+<br><br>                            
+                            Ads Campaign
+                            You can configure to show Ads seamlessly transitioning between video display based on user interaction. We support Banner and Video Campaigns across all the content like Movies, TV Shows, and Channels.
+<br><br>                            
+                            Video on Demand (VOD):
+                            You can limit content accessibility in premium videos and then make use of the paywall feature through an OTT app builder.
+<br><br>                            
+                            Analytics and Insights:
+                            Implemented analytics tools to track user engagement, content performance, and viewing patterns, providing valuable insights for content curation, marketing strategies, and user experience improvements.
+<br><br>                            
+                            Alerts:
+                            A notification system to keep users informed about transaction updates, account activities, security alerts, or promotional offers, enhancing user engagement and providing timely information.
+<br><br>                            
+                            Push Notifications:
+                            Supported personalized push notifications to users about new content releases, special offers, or personalized recommendations to keep them engaged and informed.
+<br><br>                            
+                            User Module
+<br><br>                            
+                            User Registration and Authentication
+                            We provide a seamless and secure user registration process, allowing users to create accounts and authenticate themselves through various methods like email or phone number.
+<br><br>                            
+                            User Profiles and Multi-User Accounts:
+                            Users are allowed to create personalized profiles within a single account, enabling multiple users to share the same subscription and maintain separate watch histories and preferences.
+<br><br>                            
+                            Multiple Device Compatibility
+                            We ensured that our OTT product is accessible on a wide range of devices, including Android and iOS smartphones, tablets, smart TVs, web browsers, gaming consoles, and streaming devices, to maximize audience reach.
+<br><br>                            
+                            Content Recommendation:
+                            We provide personalized content recommendation algorithms based on user preferences, viewing history, and user behaviour to suggest relevant and engaging content to the users.
+<br><br>                            
+                            Search and Filtering:
+                            We have a powerful search functionality that allows users to find specific content by titles, genres, actors, directors, or keywords. Include filtering options to help users narrow down their search results.
+<br><br>                            
+                            Download and Offline Viewing:
+                            We offer a download feature that allows users to download content for offline viewing, providing flexibility and convenience, especially in areas with limited internet connectivity.
+<br><br>                            
+                            Admin Module
+<br><br>                            
+                            Content Management System
+                            We implemented a robust CMS to manage and organize content effectively. This includes the ability to upload, categorize, and tag videos, movies, TV shows, and other media files.
+<br><br>                            
+                            Easy to Compose
+                            Our Composer in the Admin module is a powerful tool that allows administrators to curate and manage the content available on the platform. It provides a user-friendly interface and a set of intuitive tools to create and arrange Movies, TV Shows, playlists, channels, and any collections of content.
+<br><br>                            
+                            Easy to Deploy and Maintain
+                            YouCast OTT product can be deployed and operated from any Public, Private and Hybrid Cloud Or On-Premises environments.
+                            </p>
+                        <!-- <div class="button">
+                            <a href="">Read More</a>
+                        </div> -->
+                    </div>
+
+                </div>
+                
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
+
+
+
+
+
+
+</body>
+
+</html>
+{% endblock %}

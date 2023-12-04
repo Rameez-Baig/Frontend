@@ -1,0 +1,158 @@
+{% extends "layout.html" %}
+{% block body %}
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: white;
+            color: black;
+            /* Change text color to black */
+        }
+
+        .title {
+            top: 20px;
+        }
+
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        .section {
+            width: 100%;
+            min-height: 170vh;
+            background-color: #ddd;
+        }
+
+        .container {
+            width: 80%;
+            display: block;
+            margin: auto;
+            padding-top: 100px;
+        }
+
+        .content-section {
+            float: left;
+            width: 100%;
+            clear: both;
+            
+        }
+
+        .image-section {
+            float: none; /* Remove float */
+            width: 100%; /* Take up full width */
+        }
+
+        .image-section img {
+            width: 100%;
+            height: auto;
+        }
+
+        .content-section .title {
+            /* text-transform: uppercase; */
+            font-size: 20px;
+            text-align: center;
+            font-family: sans-serif;
+        }
+
+        .content-section .content h3 {
+            margin-top: 20px;
+
+        }
+
+        .content-section .content p {
+            margin-top: 10px;
+            font-size: 18px;
+            line-height: 1.5;
+        }
+
+        @media screen and (max-width: 768px) {
+            .container {
+                width: 80%;
+                display: block;
+                margin: auto;
+                padding-top: 50px;
+            }
+
+            .content-section {
+                float: none;
+                width: 100%;
+                display: block;
+                margin: auto;
+            }
+
+            .image-section {
+                float: none;
+                width: 100%;
+                display: block;
+                margin: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <br><br><br><br><br> -->
+    <div>
+        <div class="section">
+            <div class="container">
+                <div class="image-section">
+                    <img src="https://www.dextris.in/assets/images/software-banner.jpg" alt="">
+                </div>
+                <div class="content-section">
+                    <div class="title">
+                        <h1>Software Development</h1>
+                    </div>
+                    <div class="content">
+                        <!-- <h3>Lorem ipsum dolor sit amet consectetur adipisicing.</h3> -->
+                        <p>We Design & Develop Custom Software Solutions that empower businesses to stay ahead of their competition. DEXTRIS partners with you from an idea to execution, and importantly delivering top-notch Software Products within time, budget, and impeccable quality. As a top-rated Custom Software Outsourcing company in India, we offer a team of highly experienced & Professional Developers available to work with you on fixed projects or dedicated resource hire models. DEXTRIS has the right expertise for your next project. We are the best software development company in India.
+<br><br>
+                            <strong>Software Development:</strong> <br>
+                            DEXTRIS is a custom software development firm providing bespoke software development services beyond India from startups, small to large companies that help you to align your business Processes & Workflows so you focus on business matters. We develop best-in-class software products that bring multi-fold growth to your businesses. Our software development services in India comprise Web, Mobile, Desktop, and all other major technology offerings that help you ensure return on investment..
+<br><br>                            
+                            <strong>UI/UX Design:</strong><br>
+                            Our highly creative designers offer your web application a highly interactive design, motion graphics, and user-friendly interface that suits your brand.
+<br><br>                            
+                            <strong>Mobile App Development:</strong><br>
+                            From initial requirements to the final launch of the app in the app store, Our mobile application development team focuses on everything. We at DEXTRIS develop both native & cross-platform mobile apps with rich-feature integration based on the latest technology.
+ <br><br>                           
+                            <strong>Application Modernization:</strong><br>
+                            At DEXTRIS information system our modernization experts can help you with the entire application modernization cycle at cost-effective rates.
+ <br><br>                           
+                            <strong>Testing & Quality Assurance:</strong><br>
+                            From the beginning of the project development, our highly experienced software testing and QA team continuously monitor and test the projects in order to run them smoothly across all devices as browsers.</p>
+                        <!-- <div class="button">
+                            <a href="">Read More</a>
+                        </div> -->
+                    </div>
+
+                </div>
+                
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
+
+
+
+
+
+
+</body>
+
+</html>
+{% endblock %}

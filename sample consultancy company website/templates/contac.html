@@ -1,0 +1,152 @@
+{% extends "layout.html" %}
+{% block body %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-flat.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Dextris INF</title>
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai&display=swap" rel="stylesheet">
+
+    <!-- Insertung icon -->
+    <!-- <link rel="icon" href="favicon.ico" type="image/x-icon"> -->
+
+    <title>Contact Us - DEXTRIS Infoservices Pvt. Ltd</title>
+    <!-- <link rel="stylesheet" href="newstyle.css"> -->
+    <style>
+        .noone {
+            color: black;
+            padding: 34px 19px;
+            margin: 14px 19px;
+            border-radius: 23px;
+            display: block;
+            width: 70%;
+            margin: 20px auto;
+            /* position: absolute; */
+        }
+
+        body {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            margin: 0px;
+            padding: 0px;
+            background-color: white;
+            color: white;
+        }
+
+        body {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: white;
+            color: black;
+            /* Change text color to black */
+        }
+
+        .container {
+            border-radius: 23px;
+            display: flex;
+            align-items: center;
+            width: 40%;
+            margin: 20px auto;
+            background-color: white;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            /* display: block; */
+        }
+
+        .form-info {
+            flex: 1;
+            /* Take up remaining width */
+            padding: 20px;
+        }
+
+        .form {
+            flex: 1;
+            /* Take up remaining width */
+            text-align: center;
+        }
+
+        input[type="text"],
+        input[type="tel"],
+        input[type="email"] {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            padding: 10px 20px;
+            cursor: pointer;
+            align-items: center;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        /* .header{
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background-color: white;
+        } */
+    </style>
+</head>
+
+<body>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <div class="noone">
+        <!-- <img src="handshake.JPG" alt=""> -->
+        <h1>Contact Us</h1>
+        <p>DEXTRIS Infoservices Pvt. Ltd</p>
+        <p>75, 16th Main Road, Tavarekere Main Road,</p>
+        <p>BTM 1st Stage, Bangalore-560029</p>
+        <p>PH : +91-80-4212-8000</p>
+        <div class="Connect ">
+            <a>Connect</a>
+            <a href="https://www.linkedin.com/company/dextris-info-services-pvt-ltd/" target="_blank"><ion-icon
+                    name="logo-linkedin"></ion-icon></a>
+            <a><ion-icon name="logo-twitter"></ion-icon></a>
+            <a><ion-icon name="logo-instagram"></ion-icon></a>
+        </div>
+    </div>
+
+    <div class="container" >
+        <!-- <h2>Enter your name and email</h2> -->
+        <form action="/cont" method="post">
+            <input type="text" placeholder="Enter your name" name="name">
+            <input type="tel" placeholder="Enter your phone number" name="email">
+            <input type="email" placeholder="Enter your email" name="phone">
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    </main>
+    <br><br><br><br>
+
+
+</body>
+
+</html>
+
+
+</body>
+
+</html>
+{% endblock %}

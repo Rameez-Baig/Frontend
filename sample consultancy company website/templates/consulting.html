@@ -1,0 +1,147 @@
+{% extends "layout.html" %}
+{% block body %}
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: white;
+            color: black;
+            /* Change text color to black */
+        }
+
+        .title {
+            top: 20px;
+        }
+
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        .section {
+            width: 100%;
+            min-height: 120vh;
+            background-color: #ddd;
+        }
+
+        .container {
+            width: 80%;
+            display: block;
+            margin: auto;
+            padding-top: 100px;
+        }
+
+        .content-section {
+            float: left;
+            width: 100%;
+            clear: both;
+            
+        }
+
+        .image-section {
+            float: none; /* Remove float */
+            width: 100%; /* Take up full width */
+        }
+
+        .image-section img {
+            width: 100%;
+            height: auto;
+        }
+
+        .content-section .title {
+            /* text-transform: uppercase; */
+            font-size: 20px;
+            text-align: center;
+            font-family: sans-serif;
+        }
+
+        .content-section .content h3 {
+            margin-top: 20px;
+
+        }
+
+        .content-section .content p {
+            margin-top: 10px;
+            font-size: 18px;
+            line-height: 1.5;
+        }
+
+        @media screen and (max-width: 768px) {
+            .container {
+                width: 80%;
+                display: block;
+                margin: auto;
+                padding-top: 50px;
+            }
+
+            .content-section {
+                float: none;
+                width: 100%;
+                display: block;
+                margin: auto;
+            }
+
+            .image-section {
+                float: none;
+                width: 100%;
+                display: block;
+                margin: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <br><br><br><br><br> -->
+    <div>
+        <div class="section">
+            <div class="container">
+                <div class="image-section">
+                    <img src="https://www.dextris.in/assets/images/counsulting-banner.jpg" alt="">
+                </div>
+                <div class="content-section">
+                    <div class="title">
+                        <h1>Technology Consulting</h1>
+                    </div>
+                    <div class="content">
+                        <!-- <h3>Lorem ipsum dolor sit amet consectetur adipisicing.</h3> -->
+                        <p>Accelerate transformation at the intersection of business, technology, and experience We drive growth by solving complex business problems swiftly via a design-centric, agile, and platform-driven method. Our technology consulting services enable us to deliver customer experience transformation by solving complex problems to enable growth, innovation, and value, and help make AI pervasive with data platforms and intelligence at the intersection of design thinking and data sciences.
+<br><br>
+                            We empower enterprises to change from their legacy technologies to a cloud-first and digital-native world, enabling multi-speed IT powered by our IT consulting services. Our objective is to drive product and service innovation with a data-driven and agile mindset to deliver business value through our IT consulting services. With our technology consulting services, we are applying modern technology paradigms to enhance workforce engagement by transforming experiences at work.
+<br><br>                            
+                            We help our clients tackle the present and focus on what's next through technology consulting at the ‘Digital Pumpkin™,’ where multi-disciplinary teams craft meaningful digital solutions. Similarly, our ESG services help clients with enterprise ESG activation, responsible and circular supply chain, sustainable intelligence, and risk & controversies management..</p>
+                        <!-- <div class="button">
+                            <a href="">Read More</a>
+                        </div> -->
+                    </div>
+
+                </div>
+                
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
+
+
+
+
+
+
+</body>
+
+</html>
+{% endblock %}

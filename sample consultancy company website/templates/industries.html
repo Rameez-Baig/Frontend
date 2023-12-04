@@ -1,0 +1,235 @@
+{% extends "layout.html" %}
+{% block body %}
+
+<style>
+    body {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: white;
+        color: black;
+    }
+
+    .section {
+        width: 100%;
+        min-height: 100vh;
+        background-color: #f7f7f7;
+        padding: 50px 0;
+    }
+
+    .container {
+        width: 80%;
+        margin: auto;
+    }
+
+    .collapsible {
+        border: 1px solid #ddd;
+        margin-bottom: 20px;
+        border-radius: 5px;
+        overflow: hidden;
+    }
+
+    .section-title {
+        background-color: #f9f9f9;
+        padding: 15px;
+        cursor: pointer;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+    }
+    .section-title title{
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        
+    }
+
+    .content-section {
+        padding: 20px;
+        display: none;
+    }
+
+    .content.active {
+        display: block;
+    }
+
+    .image-section {
+        text-align: center;
+        /* Center-align the images */
+    }
+
+    .image-section img {
+        max-width: 100%;
+        height: auto;
+        display: inline-block;
+        /* Keep images inline */
+    }
+
+    .content p {
+        font-size: 18px;
+        line-height: 1.6;
+    }
+</style>
+<br><br><br>
+<div class="section">
+    <div class="container">
+        <div class="collapsible">
+            <div class="section-title">
+                <h2 class="title">BFSI</h2>
+                <span class="toggle">+</span>
+            </div>
+            <div class="content-section content">
+                <div class="image-section">
+                    <img src="https://www.dextris.in/assets/images/banking-banner.jpg" alt="BFSI Image">
+                </div>
+                <p>Accelerate your innovation using DEXTRIS expertise and experiance in banking and financial
+                    services. Advance your efficiency, customer experience, and business performance with our
+                    future-proof solutions.
+                    <br><br>
+                    Banking Financial Services & Insurance Software Solutions The Banking, Financial Services &
+                    Insurance (BFSI) industry is witnessing unprecedented competition from financial service
+                    providers, FinTech, and InsureTech players. They need automation advancement and
+                    revolutionary business models to meet the dynamic customer needs. We take a human-centric
+                    approach to our digital services, putting businesses at the heart of everything. As a
+                    best-in-class banking & financial software development company, we offer top-notch banking
+                    solutions to businesses that increase agility, cost leadership, and operational efficiency.
+                    <br><br>
+                    Maintaining your competitive advantage can be challenging when customers expect
+                    around-the-clock banking services. We help you streamline inefficient processes with
+                    strategies and solutions that grow your business and keep customers at the center of your
+                    organization. <br><br>
+                </p>
+            </div>
+        </div>
+
+        <div class="collapsible">
+            <div class="section-title">
+                <h2 class="title">E-Commerce</h2>
+                <span class="toggle">+</span>
+            </div>
+            <div class="content-section content">
+                <div class="image-section">
+                    <img src="https://www.dextris.in/assets/images/e-commerce-banner.jpg" alt="E-Commerce Image">
+                </div>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum, beatae voluptatibus quia adipisci
+                    vero commodi repellat sequi. Eos neque sunt soluta ex impedit, vitae illum quia suscipit quibusdam
+                    delectus tenetur dicta aliquam consectetur itaque omnis cumque labore pariatur reprehenderit,
+                    ratione, qui facere. Harum corrupti distinctio quasi similique ullam! Possimus magnam aspernatur
+                    pariatur ex quod, id earum, a molestiae cum veritatis quae, voluptate sint ut. Atque hic ducimus
+                    similique numquam ex temporibus iure iste, dolorem voluptate adipisci inventore sapiente voluptatem
+                    ullam. Nihil at tempore similique. Tempore molestias nisi eius natus voluptatum facilis debitis
+                    possimus repellendus fugiat, rem maxime animi? Et, ipsum.
+                </p>
+            </div>
+        </div>
+
+
+        <div class="collapsible">
+            <div class="section-title">
+                <h2 class="title">Life-Science</h2>
+                <span class="toggle">+</span>
+            </div>
+            <div class="content-section content">
+                <div class="image-section">
+                    <img src="https://www.dextris.in/assets/images/life-science-banner.jpg" alt="BFSI Image">
+                </div>
+                <p>Technology enabled solutions for faster drug discovery, lower R&D costs, diverse trials, adaptive manufacturing, transparent supply chain, and governed regulatory needs
+<br><br>
+                    The world of Life Science is witnessing major operational shifts. Traditional competitors are partnering on research, testing, and manufacturing new molecules, medical devices, and digital therapeutics. The collaboration is improving time to market for new treatments and recovery time from disease states, yet also improving accurate and earlier diagnoses. The trend of collaboration could be an early signal for healthcare to become more affordable and accessible while also accelerating personalized medicine and a patient centered treatment journey. DEXTRIS has been a part of these changes across the industry, creating digital technology enabled solutions for faster drug discovery, lower R&D costs, more diverse trials, adaptive manufacturing, transparent supply chain, and governed regulatory needs.
+<br><br>                   
+                    We believe that sharing data is the next major industry trend and organizations prepared with multi-cloud and interoperable solutions will emerge as leaders. DEXTRIS Life Sciences expertise, coupled with digital, data, automation, engineering, and manufacturing & supply chain solutions, is helping life science organizations address new opportunities in a rapidly evolving industry of collaboration.
+<br><br>                    
+                    DEXTRIS is focused on the Life Science industry with a passion for connecting the value chain and bringing the best care to our society. We are addressing the challenges of the past to explore a limitless future, from medical innovations to reimagining human health. By connecting and securing healthcare ecosystems, we provide our Life Sciences clients the ability to lead us into the future of a healthier world. From possibilities, to opportunities, to technology, let DEXTRIS welcome you to a future of limitless.</p>
+            </div>
+        </div>
+
+
+        <div class="collapsible">
+            <div class="section-title">
+                <h2 class="title">Health Care</h2>
+                <span class="toggle">+</span>
+            </div>
+            <div class="content-section content">
+                <div class="image-section">
+                    <img src="https://www.dextris.in/assets/images/health-care-banner.jpg" alt="E-Commerce Image">
+                </div>
+                <p>Robust Healthcare consulting services and healthcare technology solutions for enhanced quality, transparency, and access
+<br><br>
+                    Some of the fastest growing and most active areas of society right now are in the Healthcare space. Population growth, longer lifespans, increasing chronic conditions, unstable economic forces, a war for talent, and the ever-increasing pressures of compliance continuously test the ingenuity of healthcare providers. The need accelerate innovation and deepen patient-centricity has never been more urgent. But today’s leaders also know they must balance this need with increasingly complex financial and regulatory constraints.
+<br><br>                    
+                    DEXTRIS has worked with our customers across the payer, provider, healthcare product manufacturer, pharmacy, and benefits manager landscape, among others to provide a deep and broad set of business solutions ranging from new and exciting consulting strategies to bold technology solutions across the enterprise. Our consultants and solution partners work seamlessly with our customers across the entire value chain to improve acquisition, increase margins, accelerate and improve clinical decision-making, enable self-service capabilities, and step up to incredibly complex regulatory compliance expectations such as HIPAA, GDPR, CCPA, and PIPEDA.
+<br><br>                    
+                    Our services for payers and providers include core capabilities to take on the challenges of today and the future, including:
+<br><br>                    
+                    Enhanced customer management, acquisition, retention, engagement, and communication Acceleration and application of enterprise administrative platform transformation solutions
+                    Enhanced consumer experience through highly personalized and self-service capabilities
+                    More efficient and effective revenue-cycle management utilizing automation-driven approaches and predictive analytics
+                    Broader adoption of value-based and localized care models such as population health and hyper-personalized care management
+<br><br>                    
+                    Our healthcare professionals are working with our customers every day to drive seamless adoption of new and evolving processes and solutions across the healthcare industry.
+<br><br>                    
+                    Our Fosfor suite of products has been a driving force for clients deploying cognitive and ML capabilities to improve decision-making, allowing them to leverage data engineering, cloud, AI, ML, process automation, predictive analytics, and collaboration tools, to make the world a healthier place for all of us.</p>
+            </div>
+        </div>
+
+
+
+        <div class="collapsible">
+            <div class="section-title">
+                <h2 class="title">ERP Solutions</h2>
+                <span class="toggle">+</span>
+            </div>
+            <div class="content-section content">
+                <div class="image-section">
+                    <img src="https://www.dextris.in/assets/images/erp-banner.jpg" alt="E-Commerce Image">
+                </div>
+                <p>Staying up to date with the latest version of ERP ensures customers are able to take full advantage of the latest technology and newest features
+<br><br>
+                    Stay on the Latest Technology: Using modern technologies and mobile apps make accessing your ERP data easy.<br><br>
+                    Remain Compliant:Deacom is constantly adapting and updating the software to conform to new standards and regulations.<br><br>
+                    Take Advantage of Newest Features: All of our customers get access to our newest features out of the box.<br><br>
+                    
+                    Our customer support includes maintenance and upgrades to stay up to date with the latest features of ERP. The DEXTRIS support team can provide assistance with your upgrade or expansion project, based on your specific needs.
+ <br><br>                   
+                    We will work with your company to ensure a smooth transition to the latest version. We offer many levels of upgrade assistance based on each customer’s needs. Some companies have a full IT staff who can handle the upgrade on their own, while others need our team to drive the upgrade process.
+<br><br>                    
+                    Choice Brands Adhesives needed to upgrade in order to scale with their rapidly growing business. With the help of our Support Team, they were able to get all of their many facilities upgraded without interruptions.
+                    </p>
+            </div>
+        </div>
+
+
+        <div class="collapsible">
+            <div class="section-title">
+                <h2 class="title">Manufacturing and Hi-Tech</h2>
+                <span class="toggle">+</span>
+            </div>
+            <div class="content-section content">
+                <div class="image-section">
+                    <img src="https://www.dextris.in/assets/images/manufacture-bbanner.jpg" alt="E-Commerce Image">
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus eos animi atque. Asperiores facilis sapiente eius maiores, quis a consequatur explicabo aspernatur accusamus quam expedita nesciunt velit. Cumque, autem harum. Hic quia cumque perferendis ullam esse ad nobis repellendus enim! Officiis quisquam numquam fuga neque, quos perspiciatis! Aperiam, harum nihil.</p>
+            </div>
+        </div>
+
+
+
+
+    </div>
+</div>
+
+<script>
+    const collapsibles = document.querySelectorAll('.collapsible');
+
+    collapsibles.forEach(collapsible => {
+        const title = collapsible.querySelector('.section-title');
+        const content = collapsible.querySelector('.content');
+
+        title.addEventListener('click', () => {
+            content.classList.toggle('active');
+            title.querySelector('.toggle').textContent = content.classList.contains('active') ? '-' : '+';
+        });
+    });
+</script>
+
+{% endblock %}

@@ -1,0 +1,157 @@
+{% extends "layout.html" %}
+{% block body %}
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: white;
+            color: black;
+            /* Change text color to black */
+        }
+
+        .title {
+            top: 20px;
+        }
+
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        .section {
+            width: 100%;
+            min-height: 140vh;
+            background-color: #ddd;
+        }
+
+        .container {
+            width: 80%;
+            display: block;
+            margin: auto;
+            padding-top: 100px;
+        }
+
+        .content-section {
+            float: left;
+            width: 100%;
+            clear: both;
+            
+        }
+
+        .image-section {
+            float: none; /* Remove float */
+            width: 100%; /* Take up full width */
+        }
+
+        .image-section img {
+            width: 100%;
+            height: auto;
+        }
+
+        .content-section .title {
+            /* text-transform: uppercase; */
+            font-size: 20px;
+            text-align: center;
+            font-family: sans-serif;
+        }
+
+        .content-section .content h3 {
+            margin-top: 20px;
+
+        }
+
+        .content-section .content p {
+            margin-top: 10px;
+            font-size: 18px;
+            line-height: 1.5;
+        }
+
+        @media screen and (max-width: 768px) {
+            .container {
+                width: 80%;
+                display: block;
+                margin: auto;
+                padding-top: 50px;
+            }
+
+            .content-section {
+                float: none;
+                width: 100%;
+                display: block;
+                margin: auto;
+            }
+
+            .image-section {
+                float: none;
+                width: 100%;
+                display: block;
+                margin: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <br><br><br><br><br> -->
+    <div>
+        <div class="section">
+            <div class="container">
+                <div class="image-section">
+                    <img src="https://www.dextris.in/assets/images/staffaugmentation-banner.jpg" alt="">
+                </div>
+                <div class="content-section">
+                    <div class="title">
+                        <h1>Staff Augumentation</h1>
+                    </div>
+                    <div class="content">
+                        <!-- <h3>Lorem ipsum dolor sit amet consectetur adipisicing.</h3> -->
+                        <p>We offer the best staff augmentation services in Bangalore which assists you in hiring experts for web & mobile app development, software testing and digital marketing services for your project.
+<br><br>
+                            Essential Staff Augmentation Solutions for Growing Organizations We offer the best staff augmentation services in Bangalore which assists you in hiring experts for web & mobile app development, software testing and digital marketing services for your project.
+<br><br>                            
+                            Hire a flexible team that efficiently works at your working hours
+<br><br>                            
+                            We assist entrepreneurs build and launch new products by offering candidates with good expertise so that the training costs can be minimized.
+ <br><br>                           
+                            Are you building a new product?
+<br><br>                            
+                            We have good expertise in assisting businesses in developing and releasing new products effectively.
+ <br><br>                           
+                            Are you building a new product?
+ <br><br>                           
+                            We will offer the best team that suits your project requirements. We help you in efficiently expanding your team.</p>
+                        <!-- <div class="button">
+                            <a href="">Read More</a>
+                        </div> -->
+                    </div>
+
+                </div>
+                
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
+
+
+
+
+
+
+</body>
+
+</html>
+{% endblock %}
